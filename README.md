@@ -18,3 +18,7 @@ Nesse primeiro projeto deverá ser desenvolvida um jogo interativo para dois jog
 Por sua simplicidade, o jogo sugerido para ser desenvolvido será o Jogo da Velha (Tic Tac Toe).
 
 Como primeira etapa do trabalho vocês deverão deverão utilizar a biblioteca IOStream do C++ para implementar a interface do jogo em modo texto.
+
+## Projeto 02: Trabalhando com Sockets
+
+Antes de iniciarmos a integração do nosso jogo através da rede, vamos realizar um pequeno projeto de comunicação através da rede utilizando Sockets.
