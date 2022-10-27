@@ -5,6 +5,7 @@ Repositório com os documentos que serão utilizados no desenvolvimento da disci
 ## Conteúdos que Serão Abordados:
  - Sockets
     - Beej's Guide to Network Programming - PT-BR [![Open in PDF](https://img.shields.io/badge/-PDF-EC1C24?style=plastic&logo=adobeacrobatreader)](https://beej.us/guide/bgnet/translations/bgnet_ptbr.pdf)
+    - Programação de Socket - Acervo Lima (https://acervolima.com/programacao-de-soquete-em-c-c/)
  - Tempo
     - Cplusplus.com [![Open in Browser](https://img.shields.io/badge/-Web-EEEEEE?style=plastic&logo=googlechrome)](https://cplusplus.com/reference/ctime/)
  - Representação de Dados
