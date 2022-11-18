@@ -5,7 +5,43 @@
 #include <stdlib.h>
 #include <netinet/in.h>
 #include <string.h>
+#include <pthread.h>
+
 #define PORT 8080
+
+void *connection_handler(void *socket_desc)
+{
+    // Recuperando o descritor do Socket
+    int sock = *(int*)socket_desc;
+    int read_size;
+    char *message, client_message[2000];
+    char nome[2000], matricula[2000];
+    
+    do {
+        // Envia mensagem Inicial
+        message = "\nConexão realizada.\n\nEscolha uma das opcoes do menu abaixo:\n1. Para informar seu nome\n0. Para encerar\n";
+        write(sock, message, strlen(message));
+
+        read(sock, client_message, 2000);
+
+        if (client_message == "1")
+        {
+            message = "\nInforme seu nome: \n";
+            write(sock, message, strlen(message));
+
+            read(sock, client_message, 2000);
+            *nome = *client_message;
+
+            printf("%s\n", nome);
+        }
+        else if (client_message == "0")
+        {
+            message = "FIM";
+            write(sock, message, strlen(message));
+        }
+    } while (client_message != "0");
+}
+
 int main(int argc, char const *argv[])
 {
     int server_fd, new_socket, valread;
