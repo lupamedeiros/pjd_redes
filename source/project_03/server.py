@@ -16,29 +16,78 @@ class jogador():
         self.peca = peca
         self.sock = sock
 
-class partida():
-    def __init__(self) -> None:
-        j1 = None
-        j2 = None
-        tabuleiro = ""
+def testa_jogada(jogada, tabuleiro):
+    if jogada < 0 or jogada > 8:
+        return False
+    if tabuleiro[jogada] != '-':
+        return False
+    return True
 
-def jogo(j):
-    print("\nNovo jogo - [" + j['O'].ip + " - " + j['X'].ip + "]")
+def checa_vitoria(tabuleiro):
+    if tabuleiro[0] == tabuleiro[1] and tabuleiro[1] == tabuleiro[2] and tabuleiro[0] != '-':
+        return True
+    if tabuleiro[3] == tabuleiro[4] and tabuleiro[4] == tabuleiro[5] and tabuleiro[3] != '-':
+        return True
+    if tabuleiro[6] == tabuleiro[7] and tabuleiro[7] == tabuleiro[8] and tabuleiro[6] != '-':
+        return True
+    if tabuleiro[0] == tabuleiro[3] and tabuleiro[3] == tabuleiro[6] and tabuleiro[0] != '-':
+        return True
+    if tabuleiro[1] == tabuleiro[4] and tabuleiro[4] == tabuleiro[7] and tabuleiro[1] != '-':
+        return True
+    if tabuleiro[2] == tabuleiro[5] and tabuleiro[5] == tabuleiro[8] and tabuleiro[2] != '-':
+        return True
+    if tabuleiro[0] == tabuleiro[4] and tabuleiro[4] == tabuleiro[8] and tabuleiro[0] != '-':
+        return True
+    if tabuleiro[2] == tabuleiro[4] and tabuleiro[4] == tabuleiro[6] and tabuleiro[2] != '-':
+        return True
+    return False
+
+
+def jogo(p):
+    print("\nNovo jogo - [" + p['O'].ip + " - " + p['X'].ip + "]")
 
     tabuleiro = "---------"
 
     i_buffer = ""
     o_buffer = ""
 
-    jogo_continua = True
     jogador_ativo = 'O'
     contador_jogadas = 0
 
-    while jogo_continua:
-        jogada_valida = False
+    while True:
+        o_buffer =  jogador_ativo + tabuleiro
+        p['O'].sock.send(o_buffer.encode('utf8'))
+        p['X'].sock.send(o_buffer.encode('utf8'))
 
-        while not jogada_valida:
-            pass
+        i_buffer = str(p[jogador_ativo].recv(1024))
+        jogada = int(i_buffer)
+
+        if testa_jogada(jogada, tabuleiro):
+            tabuleiro = tabuleiro[:jogada] + jogador_ativo + tabuleiro[jogada + 1:]
+            contador_jogadas += 1
+        else:
+            continue
+
+        if checa_vitoria(tabuleiro)[0]:
+            o_buffer = "V" + jogador_ativo + tabuleiro
+            p['O'].sock.send(o_buffer.encode('utf8'))
+            p['X'].sock.send(o_buffer.encode('utf8'))
+            break
+        
+        if contador_jogadas == 9:
+            o_buffer = "E" + tabuleiro
+            p['O'].sock.send(o_buffer.encode('utf8'))
+            p['X'].sock.send(o_buffer.encode('utf8'))
+            break
+
+        if jogador_ativo == 'O':
+            jogador_ativo = 'X'
+        else:
+            jogador_ativo = 'O'
+
+    p['O'].sock.close()
+    p['X'].sock.close()
+    
 
 def Main():
     num_partida = 0
