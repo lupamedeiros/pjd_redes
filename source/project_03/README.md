@@ -5,8 +5,8 @@ O cliente deverá implementar o seguinte fluxo de comunicação e ações:
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    A-->D;
+    I(Início) --> C(Conecta ao Servidor)
+    C --> R(Recebe Peça que jogará)
+    R --> J(Recebe Jogador da Vez + tabuleiro)
+
 ```
