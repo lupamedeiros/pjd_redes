@@ -7,6 +7,10 @@ O cliente deverá implementar o seguinte fluxo de comunicação e ações:
 graph TD;
     I(Início) --> C(Conecta ao Servidor)
     C --> R(Recebe Peça que jogará)
-    R --> J(Recebe Jogador da Vez + tabuleiro)
+    R --> V(Recebe Situação + Tabuleiro)
+    V --> J(Vez do Jogador?)
+    J -- Sim --> L(Lê jogada e envia para o servidor)
+    L --> V
+    J -- Não --> V
 
 ```
