@@ -8,7 +8,9 @@ graph TD;
     I(Início) --> C(Conecta ao Servidor)
     C --> R(Recebe Peça que jogará)
     R --> V(Recebe Situação + Tabuleiro)
-    V --> J(Vez do Jogador?)
+    V --> F{É Fim de Jogo?}
+    F -- Sim --> T(Apresenta Resultado e Termina)
+    F -- Não --> J{Vez do Jogador?}
     J -- Sim --> L(Lê jogada e envia para o servidor)
     L --> V
     J -- Não --> V
