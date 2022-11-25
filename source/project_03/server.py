@@ -59,8 +59,10 @@ def jogo(p):
         p['O'].sock.send(o_buffer.encode('utf8'))
         p['X'].sock.send(o_buffer.encode('utf8'))
 
-        i_buffer = str(p[jogador_ativo].recv(1024))
-        jogada = int(i_buffer)
+        i_buffer = ""
+        i_buffer = p[jogador_ativo].sock.recv(1024)
+        jogada = int(i_buffer) -1
+        print("\nJogada recebida: " + str(jogada))
 
         if testa_jogada(jogada, tabuleiro):
             tabuleiro = tabuleiro[:jogada] + jogador_ativo + tabuleiro[jogada + 1:]
@@ -68,7 +70,7 @@ def jogo(p):
         else:
             continue
 
-        if checa_vitoria(tabuleiro)[0]:
+        if checa_vitoria(tabuleiro):
             o_buffer = "V" + jogador_ativo + tabuleiro
             p['O'].sock.send(o_buffer.encode('utf8'))
             p['X'].sock.send(o_buffer.encode('utf8'))
@@ -104,12 +106,12 @@ def Main():
 
     while True:
         print("\nCriando partida " + str(num_partida))
-        partidas.append[partida()]
+        partidas.append({})
 
         print("\nAguardando Jogador 1...")
         c1, addr1 = s.accept()
         i_buffer = str(c1.recv(1024), encoding='utf8')
-        partidas[num_partida].j1 = jogador(addr1[0], 'O', c1, i_buffer)
+        partidas[num_partida]['O'] = jogador(addr1[0], 'O', c1, i_buffer)
 
         o_buffer = 'O'
         c1.send(o_buffer.encode('utf8'))
@@ -117,14 +119,14 @@ def Main():
         print("\nAguardando Jogador 2...")
         c2, addr2 = s.accept()
         i_buffer = str(c2.recv(1024), encoding='utf8')
-        partidas[num_partida].j2 = jogador(addr2[0], 'X', c2, i_buffer)
+        partidas[num_partida]['X'] = jogador(addr2[0], 'X', c2, i_buffer)
 
         o_buffer = 'X'
         c2.send(o_buffer.encode('utf8'))
 
         print("\nIniciando partida " + str(num_partida))
 
-        start_new_thread(jogo, (partidas[num_partida]))
+        start_new_thread(jogo, ((partidas[num_partida],)))
 
         num_partida += 1
 
