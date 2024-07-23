@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\bin\Debug\net8.0\SocketServer.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\bin\Debug\net8.0\SocketServer.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\bin\Debug\net8.0\SocketServer.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\bin\Debug\net8.0\SocketServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\bin\Debug\net8.0\SocketServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\refint\SocketServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\SocketServer.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketServer\SocketServer\obj\Debug\net8.0\ref\SocketServer.dll

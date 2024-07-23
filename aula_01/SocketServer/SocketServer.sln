@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServer", "SocketServer\SocketServer.csproj", "{41429DF1-94F0-4775-8B11-3AE1896DAE1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41429DF1-94F0-4775-8B11-3AE1896DAE1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41429DF1-94F0-4775-8B11-3AE1896DAE1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41429DF1-94F0-4775-8B11-3AE1896DAE1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41429DF1-94F0-4775-8B11-3AE1896DAE1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

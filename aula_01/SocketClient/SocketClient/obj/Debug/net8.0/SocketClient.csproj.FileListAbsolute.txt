@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\bin\Debug\net8.0\SocketClient.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\bin\Debug\net8.0\SocketClient.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\bin\Debug\net8.0\SocketClient.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\bin\Debug\net8.0\SocketClient.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\bin\Debug\net8.0\SocketClient.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\refint\SocketClient.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\SocketClient.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_01\SocketClient\SocketClient\obj\Debug\net8.0\ref\SocketClient.dll
