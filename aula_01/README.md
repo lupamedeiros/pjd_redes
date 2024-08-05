@@ -32,7 +32,9 @@ para início do programa forem estabelecidas, o servidor dará início à partid
 A aplicação Cliente irá realizar a solicitação de conexão com o servidor. E aguardará
 as orientações sobre o andamento da execução da partida.
 
-O Diagrama de Sequência abaixo descreve a comunicação realizada pelas aplicações `SocketServer` e `SocketClient`.
+O Diagrama de Sequência abaixo descreve a comunicação realizada pelas aplicações
+[`SocketServer`](./SocketServer/SocketServer/Program.cs) e
+[`SocketClient`](./SocketClient/SocketClient/Program.cs).
 
 ```mermaid
 sequenceDiagram
