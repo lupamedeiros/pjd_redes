@@ -84,17 +84,23 @@ stateDiagram-v2
     create : thread = new Thread()
     start : thread.Start()
     print1 : PrintNumber()
+    state thread {
+        [*] --> print2
+        print2 --> [*]
+    }
     print2 : PrintNumber()
     join : thread.Join()
     write : Console.WriteLine()
+    state Main {
     [*] --> create
     create --> start 
     start --> print1
-    start --> print2
+    start --> thread
     print1 --> join
-    print2 --> join
+    thread --> join
     join --> write
     write --> [*]
+    }
 ```
 
 ## 3. TcpListener
