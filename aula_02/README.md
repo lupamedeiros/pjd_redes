@@ -91,9 +91,9 @@ stateDiagram-v2
     create --> start 
     start --> print1
     start --> print2
-    print1 --> join;
-    print2 --> join;
-    join --> write;
+    print1 --> join
+    print2 --> join
+    join --> write
     write --> [*]
 ```
 
