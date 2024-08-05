@@ -81,12 +81,12 @@ Explique o que aconteceu.
 
 ```mermaid
 stateDiagram-v2 
-    create : thread = new Thread();
-    start : thread.Start();
-    print1 : PrintNumber();
-    print2 : PrintNumber();
-    join : thread.Join();
-    write : Console.WriteLine();
+    create : thread = new Thread()
+    start : thread.Start()
+    print1 : PrintNumber()
+    print2 : PrintNumber()
+    join : thread.Join()
+    write : Console.WriteLine()
     [*] --> create
     create --> start 
     start --> print1
