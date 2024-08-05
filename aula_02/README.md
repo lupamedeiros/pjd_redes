@@ -3,7 +3,8 @@
 ## Conteúdo Programado
 1. O que são Threads?
 2. Para que usar Threads na implementação do Servidor?
-3. TcpListener
+3. Exemplo de Thread
+4. TcpListener
 4. Como criar um Socket TCP/IP em C#;
 5. Como realizar a conexão com o servidor.
 
@@ -30,6 +31,65 @@ o Sevidor atenda vários clientes simultâneamente.
 
 Num jogo em que vário clientes podem se comunicar simultâneamente com o servidor, é necessário
 que fluxos diferentes de código executem paralelamente.
+
+## 3. Exemplo de Thread
+
+O código a seguir mostra um exemplo de aplicação utilizando Threads.
+
+```cs
+using System;
+using System.Threading;
+
+class Program
+{
+static void Main()
+{
+// Cria uma nova thread que executa o método PrintNumbers
+Thread thread = new Thread(PrintNumbers);
+
+        // Inicia a thread
+        thread.Start();
+        
+        // Método executado na thread principal
+        PrintNumbers();
+        
+        // Aguarda a conclusão da thread
+        thread.Join();
+
+        Console.WriteLine("Fim do programa");
+    }
+
+    // Método que será executado pela thread
+    static void PrintNumbers()
+    {
+        // Obtém o identificador da thread atual
+        string threadId = Thread.CurrentThread.ManagedThreadId.ToString();
+        
+        for (int i = 1; i <= 5; i++)
+        {
+            Console.WriteLine($"Thread {threadId} - Número: {i}");
+            // Pausa de 1 segundo entre cada número
+            Thread.Sleep(1000);
+        }
+    }
+}
+```
+Replique o código acima, modificando a posição de `thread.Join()` para antes da linha `PrintNumbers()`.
+Explique o que aconteceu.
+
+### 3.1. Diagrama de Sequência
+
+```mermaid
+stateDiagram-v2 
+    [*] --> create[thread = new Thread()];
+    create --> start[thread.Start()];
+    start --> print1[PrintNumber()];
+    start --> print2[PrintNumber()];
+    print1 --> join[thread.Join()];
+    print2 --> join[thread.Join()];
+    join --> write[Console.WriteLine()];
+    write --> [*]
+```
 
 ## 3. TcpListener
 

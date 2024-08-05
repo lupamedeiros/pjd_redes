@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\bin\Debug\net8.0\ThreadExample.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\bin\Debug\net8.0\ThreadExample.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\bin\Debug\net8.0\ThreadExample.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\bin\Debug\net8.0\ThreadExample.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\bin\Debug\net8.0\ThreadExample.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\refint\ThreadExample.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ThreadExample.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\ThreadExample\ThreadExample\obj\Debug\net8.0\ref\ThreadExample.dll

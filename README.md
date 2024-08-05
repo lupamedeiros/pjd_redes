@@ -18,4 +18,4 @@ Nesta aula será apresentando o conceito de Threading. Com o uso de threadings �
 servidores capazes de atender múltiplos clientes simultaneamente.
 
 Arquivos:
- - [Descrição da Aula]
+ - [Descrição da Aula](./aula_02/README.md)
