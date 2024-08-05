@@ -81,7 +81,8 @@ Explique o que aconteceu.
 
 ```mermaid
 stateDiagram-v2 
-    [*] --> create["thread = new Thread()"];
+    create : thread = new Thread();
+    [*] --> create;
     create --> start[thread.Start()];
     start --> print1[PrintNumber()];
     start --> print2[PrintNumber()];
