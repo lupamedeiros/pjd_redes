@@ -34,7 +34,7 @@ que fluxos diferentes de código executem paralelamente.
 
 ## 3. Exemplo de Thread
 
-O código a seguir mostra um exemplo de aplicação utilizando Threads.
+O código a seguir mostra um exemplo de aplicação utilizando Threads. Disponível em [ThreadExample/Program.cs](./ThreadExample/ThreadExample/Program.cs).
 
 ```cs
 using System;
@@ -74,8 +74,6 @@ Thread thread = new Thread(PrintNumbers);
     }
 }
 ```
-Replique o código acima, modificando a posição de `thread.Join()` para antes da linha `PrintNumbers()`.
-Explique o que aconteceu.
 
 ### 3.1. Diagrama de Sequência
 
@@ -103,7 +101,13 @@ stateDiagram-v2
     }
 ```
 
-## 3. TcpListener
+### 3.2. Exercícios
+1. Replique o código acima, modificando a posição de `thread.Join()` para antes da linha `PrintNumbers()`.
+Explique o que aconteceu.
+2. Modifique o programa para que sejam executadas duas threads.
+3. Modifique o programa para que uma thread conte progressivamente e a outra regressivamente.
+
+## 4. TcpListener
 
 O TcpListener é uma classe na biblioteca .NET utilizada para escutar conexões de rede TCP
 em uma porta específica. Ela oferece uma maneira simplificada e de alto nível para
@@ -123,8 +127,8 @@ comunicação através de sockets.
    2. Ideal para aplicações que precisam de um servidor TCP básico e rápido de implementar.
 
 ### 3.2. Métodos Comuns:
-   `Start()`: Inicia o TcpListener para começar a escutar conexões de entrada.
-   `Stop()`: Para o TcpListener de escutar conexões.
-   `AcceptTcpClient()`: Aceita uma conexão de cliente e retorna um TcpClient para comunicação.
-   `AcceptSocket()`: Aceita uma conexão de cliente e retorna um Socket para comunicação, fornecendo maior controle sobre a comunicação de rede.
+* `Start()`: Inicia o TcpListener para começar a escutar conexões de entrada.
+* `Stop()`: Para o TcpListener de escutar conexões.
+* `AcceptTcpClient()`: Aceita uma conexão de cliente e retorna um TcpClient para comunicação.
+* `AcceptSocket()`: Aceita uma conexão de cliente e retorna um Socket para comunicação, fornecendo maior controle sobre a comunicação de rede.
 

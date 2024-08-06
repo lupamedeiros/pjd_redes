@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\bin\Debug\net8.0\MultiThreadServer.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\bin\Debug\net8.0\MultiThreadServer.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\bin\Debug\net8.0\MultiThreadServer.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\bin\Debug\net8.0\MultiThreadServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\bin\Debug\net8.0\MultiThreadServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\refint\MultiThreadServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\MultiThreadServer.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadServer\MultiThreadServer\obj\Debug\net8.0\ref\MultiThreadServer.dll

@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\bin\Debug\net8.0\MultiThreadClient.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\bin\Debug\net8.0\MultiThreadClient.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\bin\Debug\net8.0\MultiThreadClient.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\bin\Debug\net8.0\MultiThreadClient.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\bin\Debug\net8.0\MultiThreadClient.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\refint\MultiThreadClient.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\MultiThreadClient.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_02\MultiThreadClient\MultiThreadClient\obj\Debug\net8.0\ref\MultiThreadClient.dll
