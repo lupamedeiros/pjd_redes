@@ -11,22 +11,23 @@ flowchart TD
     A[Iniciar Servidor] --> B[Escutar Conexões]
     B --> C{Cliente Conectado?}
     C -- Não --> B
-    subgraph HandleClient
     C -- Sim --> D[Aceitar Conexão]
     D --> E[Iniciar Nova Thread para Cliente]
-    E --> F[Enviar Menu ao Cliente]
-    F --> G[Cliente Envia Escolha]
-    G --> H{Escolha do Cliente}
-    H -- 1: Incrementar --> I[Incrementar Número]
-    H -- 2: Decrementar --> J[Decrementar Número]
-    H -- 3: Exibir Número --> K[Exibir Número]
-    H -- 0: Sair --> L[Encerrar Conexão]
-    H -- Inválido --> M[Enviar Mensagem de Opção Inválida]
-    I --> F[Enviar Menu ao Cliente]
-    J --> F[Enviar Menu ao Cliente]
-    K --> F[Enviar Menu ao Cliente]
-    M --> F[Enviar Menu ao Cliente]
-    L --> B
+    D --> B
+    subgraph HandleClient
+        E --> F[Enviar Menu ao Cliente]
+        F --> G[Cliente Envia Escolha]
+        G --> H{Escolha do Cliente}
+        H -- 1: Incrementar --> I[Incrementar Número]
+        H -- 2: Decrementar --> J[Decrementar Número]
+        H -- 3: Exibir Número --> K[Exibir Número]
+        H -- 0: Sair --> L[Encerrar Conexão]
+        H -- Inválido --> M[Enviar Mensagem de Opção Inválida]
+        I --> F[Enviar Menu ao Cliente]
+        J --> F[Enviar Menu ao Cliente]
+        K --> F[Enviar Menu ao Cliente]
+        M --> F[Enviar Menu ao Cliente]
+        L --> N[Encerrar Thread]
     end
 ```
 
