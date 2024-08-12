@@ -63,7 +63,7 @@ class Program
             int bytesRead;
 
             // Envia o menu ao cliente
-            SendMenu(stream);
+            SendMenu(stream, "");
 
             while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) != 0)
             {
