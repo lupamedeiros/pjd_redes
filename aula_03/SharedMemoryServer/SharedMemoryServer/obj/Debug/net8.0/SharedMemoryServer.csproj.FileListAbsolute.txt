@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\bin\Debug\net8.0\SharedMemoryServer.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\bin\Debug\net8.0\SharedMemoryServer.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\bin\Debug\net8.0\SharedMemoryServer.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\bin\Debug\net8.0\SharedMemoryServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\bin\Debug\net8.0\SharedMemoryServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\refint\SharedMemoryServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\SharedMemoryServer.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\SharedMemoryServer\SharedMemoryServer\obj\Debug\net8.0\ref\SharedMemoryServer.dll

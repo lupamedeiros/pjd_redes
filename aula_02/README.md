@@ -5,8 +5,6 @@
 2. Para que usar Threads na implementação do Servidor?
 3. Exemplo de Thread
 4. TcpListener
-4. Como criar um Socket TCP/IP em C#;
-5. Como realizar a conexão com o servidor.
 
 ## 1. O que são Threads?
 

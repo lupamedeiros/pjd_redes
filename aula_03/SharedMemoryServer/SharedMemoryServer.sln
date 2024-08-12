@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedMemoryServer", "SharedMemoryServer\SharedMemoryServer.csproj", "{3CF83783-B740-4A2E-B322-C49AEF54E006}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CF83783-B740-4A2E-B322-C49AEF54E006}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CF83783-B740-4A2E-B322-C49AEF54E006}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CF83783-B740-4A2E-B322-C49AEF54E006}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CF83783-B740-4A2E-B322-C49AEF54E006}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
