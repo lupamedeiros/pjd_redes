@@ -89,6 +89,8 @@ class Program
                             SendInvalidOptionMessage(stream);
                             break;
                     }
+                    
+                    Console.WriteLine(sharedNumber);
                 }
                 else
                 {
@@ -96,7 +98,7 @@ class Program
                 }
 
                 // Reenvia o menu após a operação
-                SendMenu(stream, "");
+                // SendMenu(stream, "");
             }
         }
         catch (Exception e)

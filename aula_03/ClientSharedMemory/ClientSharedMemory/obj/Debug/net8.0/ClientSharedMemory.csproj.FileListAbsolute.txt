@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\bin\Debug\net8.0\ClientSharedMemory.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\bin\Debug\net8.0\ClientSharedMemory.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\bin\Debug\net8.0\ClientSharedMemory.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\bin\Debug\net8.0\ClientSharedMemory.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\bin\Debug\net8.0\ClientSharedMemory.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\refint\ClientSharedMemory.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ClientSharedMemory.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\aula_03\ClientSharedMemory\ClientSharedMemory\obj\Debug\net8.0\ref\ClientSharedMemory.dll

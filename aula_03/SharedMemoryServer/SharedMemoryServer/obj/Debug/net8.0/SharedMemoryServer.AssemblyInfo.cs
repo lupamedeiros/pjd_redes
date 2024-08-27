@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharedMemoryServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e340f1e3f71e5de45fa155b9367bf80cfc491541")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf4a7e9b9a4edd5a7e131afb61101c3d30e7e7ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharedMemoryServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharedMemoryServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

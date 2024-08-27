@@ -11,7 +11,7 @@ class Server
         TcpListener server = null;
         try
         {
-            IPAddress localAddr = IPAddress.Parse("127.0.0.1");
+            IPAddress localAddr = IPAddress.Any;
             int port = 13000;
             server = new TcpListener(localAddr, port);
             server.Start();
@@ -22,7 +22,6 @@ class Server
                 Console.WriteLine("Aguardando conexão...");
 
                 TcpClient client = server.AcceptTcpClient();
-                Console.WriteLine("Conexão aceita!");
 
                 Thread clientThread = new Thread(HandleClient);
                 clientThread.Start(client);
@@ -45,6 +44,8 @@ class Server
     {
         TcpClient client = (TcpClient)obj;
         NetworkStream stream = null;
+        string nome = null;
+        
         try
         {
             stream = client.GetStream();
@@ -54,11 +55,19 @@ class Server
             while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) != 0)
             {
                 string data = Encoding.ASCII.GetString(buffer, 0, bytesRead);
-                Console.WriteLine("Recebido: {0}", data);
-
+                
+                if (nome == null)
+                {
+                    nome = new string(data);
+                    Console.WriteLine("Conectado com: {0}", data);
+                }
+                else
+                {
+                    Console.WriteLine("[{0}] enviou: {1}", nome, data);                    
+                }
+                
                 byte[] msg = Encoding.ASCII.GetBytes("Mensagem recebida");
                 stream.Write(msg, 0, msg.Length);
-                Console.WriteLine("Enviado: Mensagem recebida");
             }
         }
         catch (Exception e)

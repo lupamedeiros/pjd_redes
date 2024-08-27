@@ -19,3 +19,21 @@ servidores capazes de atender múltiplos clientes simultaneamente.
 
 Arquivos:
  - [Descrição da Aula](./aula_02/README.md)
+
+## Aula 03 - Memória Compartilhada
+
+Nesta aula foi apresentado um Servidor com Memória Compatilhada entre as Threads.
+O objetivo é que os estudantes implementem um cliente e percebam o efeitos dos
+diversos clientes sobre a memória compartilhada do servidor.
+
+- [Descrição da Aula](./aula_03/README.md)
+
+## Projeto Jogo da Velha
+
+Como conclusão dessa primeira etapa os estudantes deverão desenvolver o cliente 
+para um Jogo da Velha.
+
+A especificação e o código do servidor serão fornecidos, cabendo ao grupo:
+ - Escrever a especificação da Aplicação Cliente;
+ - Escrever o Fluxograma da Aplicação Cliente;
+ - Desenvolver a Aplicação Cliente que irá se comunicar com o Servidor disponibilizado pelo professor.

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ClientSharedMemory/1.0.0": {
+        "runtime": {
+          "ClientSharedMemory.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ClientSharedMemory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

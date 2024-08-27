@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MultiThreadServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e0ef023da72d3ab50ceda785826565ef12fdd3be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f58cafdaa22dd4a4aa0cb4955fd060bea1e7c56b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MultiThreadServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MultiThreadServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
