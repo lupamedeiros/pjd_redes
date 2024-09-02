@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClientSharedMemory")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf4a7e9b9a4edd5a7e131afb61101c3d30e7e7ea")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0601aa9caeac29826bff5a385acb135ebe248b29")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClientSharedMemory")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClientSharedMemory")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
