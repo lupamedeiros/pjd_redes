@@ -128,5 +128,4 @@ sequenceDiagram
     Servidor ->> Cliente01: "1"
     Servidor ->> Cliente01: "OOOXX----1"
     Servidor ->> Cliente02: "OOOXX----1"
-    
 ```
