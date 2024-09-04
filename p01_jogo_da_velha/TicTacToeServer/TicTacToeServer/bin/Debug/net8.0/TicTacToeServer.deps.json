@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "TicTacToeServer/1.0.0": {
+        "runtime": {
+          "TicTacToeServer.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TicTacToeServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

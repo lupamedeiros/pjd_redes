@@ -1,0 +1,15 @@
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\bin\Debug\net8.0\TicTacToeServer.exe
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\bin\Debug\net8.0\TicTacToeServer.deps.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\bin\Debug\net8.0\TicTacToeServer.runtimeconfig.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\bin\Debug\net8.0\TicTacToeServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\bin\Debug\net8.0\TicTacToeServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.AssemblyInfoInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.AssemblyInfo.cs
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.csproj.CoreCompileInputs.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.sourcelink.json
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\refint\TicTacToeServer.dll
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.pdb
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\TicTacToeServer.genruntimeconfig.cache
+C:\Users\Luiz Paulo\Documents\GitHub\pjd_redes\p01_jogo_da_velha\TicTacToeServer\TicTacToeServer\obj\Debug\net8.0\ref\TicTacToeServer.dll

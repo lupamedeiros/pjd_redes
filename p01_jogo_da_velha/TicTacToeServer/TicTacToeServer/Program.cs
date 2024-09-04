@@ -79,6 +79,7 @@ class GameRoom
     public GameRoom(int gameId)
     {
         id = gameId;
+        Console.WriteLine($"Jogo {id} criado.");
         InitializeBoard();
     }
 
@@ -89,15 +90,15 @@ class GameRoom
             if (player1 == null)
             {
                 player1 = player;
-                Thread playerThread = new Thread(() => HandlePlayer(player1, 'X'));
-                playerThread.Start();
             }
             else if (player2 == null)
             {
                 player2 = player;
                 IsWaitingForPlayer = false;
-                Thread playerThread = new Thread(() => HandlePlayer(player2, 'O'));
-                playerThread.Start();
+                Thread playerThread1 = new Thread(() => HandlePlayer(player1, 'X'));
+                playerThread1.Start();
+                Thread playerThread2 = new Thread(() => HandlePlayer(player2, 'O'));
+                playerThread2.Start();
             }
         }
     }
@@ -224,7 +225,8 @@ class GameRoom
 
     private void SendBoard(NetworkStream stream, String result)
     {
-        string boardString = board + result;
+        string boardString = new string(board) + result;
+        Console.WriteLine(boardString);
         byte[] msg = Encoding.UTF8.GetBytes(boardString);
         stream.Write(msg, 0, msg.Length);
     }
