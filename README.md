@@ -37,3 +37,5 @@ A especificação e o código do servidor serão fornecidos, cabendo ao grupo:
  - Escrever a especificação da Aplicação Cliente;
  - Escrever o Fluxograma da Aplicação Cliente;
  - Desenvolver a Aplicação Cliente que irá se comunicar com o Servidor disponibilizado pelo professor.
+
+- [Orientações](./p01_jogo_da_velha/README.md)

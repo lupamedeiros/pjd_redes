@@ -14,6 +14,9 @@ Como material para avaliação deverá ser apresentado:
 
 Nesta seção serão apresentadas as características de funcionamento do servidor disponibilizado. É importante compreender bem o funcionamento do servidor para desenvolver um cliente capaz de interagir corretamente com ele.
 
+O Executável a seguir `TicTacToeClient.exe` possui uma implementação de um cliente funcional. Você pode usá-lo para
+comparar com o seu cliente.
+
 ### Características
 
 - O Servidor irá aguardar solicitações de conexão dos clientes e os organizará em Salas de Jogo conforme a ordem de conexão.
