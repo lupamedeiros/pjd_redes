@@ -7,7 +7,6 @@ using System.Collections.Generic;
 
 class TicTacToeServer
 {
-    private static readonly object lockObject = new object();
     private static List<GameRoom> gameRooms = new List<GameRoom>();
 
     static void Main(string[] args)
@@ -31,19 +30,12 @@ class TicTacToeServer
 
                 // Tentar encontrar uma sala incompleta
                 GameRoom room = null;
-                lock (lockObject)
+                room = gameRooms.Find(r => r.IsWaitingForPlayer);
+                if (room == null)
                 {
-                    room = gameRooms.Find(r => r.IsWaitingForPlayer);
-                    if (room == null)
-                    {
-                        // Criar uma nova sala se não houver disponível
-                        room = new GameRoom(gameCounter++);
-                        gameRooms.Add(room);
-                        byte[] buffer = new byte[8];
-                        string msg = "1";
-                        buffer = Encoding.UTF8.GetBytes(msg);
-                        stream.Write(buffer, 0, buffer.Length);
-                    }
+                    // Criar uma nova sala se não houver disponível
+                    room = new GameRoom(gameCounter++);
+                    gameRooms.Add(room);
                 }
 
                 // Adicionar jogador à sala
@@ -89,119 +81,112 @@ class GameRoom
         {
             if (player1 == null)
             {
+                Console.WriteLine("Entrou o Jogador 1");
                 player1 = player;
+                NetworkStream stream = player.GetStream();
+                string msg = "1";
+                byte[] buffer = new byte[8];
+                buffer = Encoding.UTF8.GetBytes(msg);
+                stream.Write(buffer, 0, buffer.Length);
             }
             else if (player2 == null)
             {
+                Console.WriteLine("Entrou o Jogador 2");
                 player2 = player;
                 IsWaitingForPlayer = false;
-                Thread playerThread1 = new Thread(() => HandlePlayer(player1, 'X'));
-                playerThread1.Start();
-                Thread playerThread2 = new Thread(() => HandlePlayer(player2, 'O'));
-                playerThread2.Start();
+                Thread gameThread = new Thread(() => HandleGame(player1, player2));
+                gameThread.Start();
             }
         }
     }
 
-    private void HandlePlayer(TcpClient client, char symbol)
+    private void HandleGame(TcpClient player1, TcpClient player2)
     {
-        NetworkStream stream = client.GetStream();
-        byte[] buffer = new byte[256];
-        int playerNumber = symbol == 'X' ? 1 : 2;
+        NetworkStream[] stream = new NetworkStream[2];
+        stream[0] = player1.GetStream();
+        stream[1] = player2.GetStream();
+        byte[] inBuffer = new byte[256];
+        byte[] outBuffer = new byte[256];
+        int currentPlayer = 1;
+        char currentSymbol = 'X';
         string msg = "0";
+        int bytesRead = 0;
+        bool parse = false;
+        int position = 0;
 
-        buffer = Encoding.UTF8.GetBytes(msg);
-        stream.Write(buffer, 0, buffer.Length);
+        outBuffer = Encoding.UTF8.GetBytes(msg);
+        stream[0].Write(outBuffer, 0, outBuffer.Length);
+        stream[1].Write(outBuffer, 0, outBuffer.Length);
         
-        SendBoard(stream, "");
+        SendBoard(stream[0], "");
+        SendBoard(stream[1], "");
 
         try
         {
             while (!gameEnded)
             {
-                lock (lockObject)
+                outBuffer = Encoding.UTF8.GetBytes(currentSymbol == 'X' ? "X" : "O");
+                stream[currentPlayer-1].Write(outBuffer, 0, outBuffer.Length);
+
+                while (true)
                 {
-                    // Verifica se é a vez do jogador
-                    if (currentPlayer != playerNumber)
-                    {
-                        Monitor.Wait(lockObject);
-                        string result = "";
-                        if (CheckWin(symbol == 'X' ? 'O' : 'X'))
-                        {
-                            result = currentPlayer == 1 ? "2" : "1";
-                            SendBoard(stream, result);
-                            break;
-                        }
+                    bytesRead = stream[currentPlayer - 1].Read(inBuffer, 0, inBuffer.Length);
+                    msg = Encoding.UTF8.GetString(inBuffer, 0, bytesRead);
 
-                        if (CheckDraw())
-                        {
-                            SendBoard(stream, "3");
-                            break;
-                        }
+                    parse = int.TryParse(msg, out position);
+
+                    if (!parse || position < 1 || position > 9)
+                    {
+                        Console.WriteLine(position);
+                        msg = "-1";
+                        outBuffer = Encoding.UTF8.GetBytes(msg);
+                        stream[currentPlayer - 1].Write(outBuffer, 0, outBuffer.Length);
+                        Console.WriteLine($"Jogo {id}: jogador {currentPlayer} enviou uma jogada inválida.");
+                        continue;
                     }
 
-                    // Envia uma mensagem solicitando o movimento
-                    msg = symbol == 'X' ? "X" : "O";
-                    buffer = Encoding.UTF8.GetBytes(msg);
-                    stream.Write(buffer, 0, buffer.Length);
-
-                    // Lê o movimento do jogador
-                    int position = 0;
-                    while (true)
+                    if (board[position - 1] != '-')
                     {
-                        int bytesRead = stream.Read(buffer, 0, buffer.Length);
-                        string input = Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim();
-
-                        bool parse = int.TryParse(input, out position);
-
-                        if (!parse || position < 1 || position > 9)
-                        {
-                            msg = "-1";
-                            buffer = Encoding.UTF8.GetBytes(msg);
-                            stream.Write(buffer, 0, buffer.Length);
-                            Console.WriteLine($"Jogo {id}: jogador {playerNumber} enviou a jogada inválida {input}");
-                            continue;
-                        }
-
-                        if (board[position - 1] != '-')
-                        {
-                            msg = "-1";
-                            buffer = Encoding.UTF8.GetBytes(msg);
-                            stream.Write(buffer, 0, buffer.Length);
-                            Console.WriteLine($"Jogo {id}: jogador {playerNumber} enviou a jogada inválida {input}");
-                            continue;
-                        }
-
-                        break;
+                        msg = "-1";
+                        outBuffer = Encoding.UTF8.GetBytes(msg);
+                        stream[currentPlayer - 1].Write(outBuffer, 0, outBuffer.Length);
+                        Console.WriteLine($"Jogo {id}: jogador {currentPlayer} escolheu um espaço ocupado.");
+                        continue;
                     }
 
-                    msg = "1";
-                    buffer = Encoding.UTF8.GetBytes(msg);
-                    stream.Write(buffer, 0, buffer.Length);
-                    
-                    Console.WriteLine($"Jogo {id}: jogador {playerNumber} marcou a posição {position}");
-                    board[position - 1] = symbol;
-                    
-                    if (CheckWin(symbol))
-                    {
-                        gameEnded = true;
-                        SendBoard(stream, symbol == 'X' ? "1" : "2");
-                        Console.WriteLine($"Jogo {id} terminou: jogador {playerNumber} venceu");
-                        break;
-                    }
-
-                    if (CheckDraw())
-                    {
-                        gameEnded = true;
-                        SendBoard(stream, "3");
-                        Console.WriteLine($"Jogo {id} terminou em empate");
-                        break;
-                    }
-
-                    currentPlayer = currentPlayer == 1 ? 2 : 1;
-                    
-                    Monitor.PulseAll(lockObject); // Permite que o outro jogador jogue
+                    break;
                 }
+
+                msg = "1";
+                outBuffer = Encoding.UTF8.GetBytes(msg);
+                stream[currentPlayer-1].Write(outBuffer, 0, outBuffer.Length);
+                
+                Console.WriteLine($"Jogo {id}: jogador {currentPlayer} marcou a posição {position}");
+                board[position - 1] = currentSymbol;
+                
+                if (CheckWin(currentSymbol))
+                {
+                    gameEnded = true;
+                    SendBoard(stream[0], currentSymbol == 'X' ? "1" : "2");
+                    SendBoard(stream[1], currentSymbol == 'X' ? "1" : "2");
+                    Console.WriteLine($"Jogo {id} terminou: jogador {currentPlayer} venceu");
+                    break;
+                }
+
+                if (CheckDraw())
+                {
+                    gameEnded = true;
+                    SendBoard(stream[0], "3");
+                    SendBoard(stream[1], "3");
+                    Console.WriteLine($"Jogo {id} terminou em empate");
+                    break;
+                }
+
+                currentPlayer = currentPlayer == 1 ? 2 : 1;
+                currentSymbol = currentSymbol == 'X' ? 'O' : 'X';
+                
+                SendBoard(stream[0], "");
+                SendBoard(stream[1], "");
             }
         }
         catch (Exception e)
@@ -210,8 +195,10 @@ class GameRoom
         }
         finally
         {
-            stream?.Close();
-            client.Close();
+            stream[0]?.Close();
+            stream[1]?.Close();
+            player1.Close();
+            player2.Close();
         }
     }
 
@@ -239,7 +226,7 @@ class GameRoom
             (board[6] == symbol && board[7] == symbol && board[8] == symbol) ||
             (board[0] == symbol && board[3] == symbol && board[6] == symbol) ||
             (board[1] == symbol && board[4] == symbol && board[7] == symbol) ||
-            (board[2] == symbol && board[5] == symbol && board[6] == symbol) ||
+            (board[2] == symbol && board[5] == symbol && board[8] == symbol) ||
             (board[0] == symbol && board[4] == symbol && board[8] == symbol) ||
             (board[2] == symbol && board[4] == symbol && board[6] == symbol))
         {
